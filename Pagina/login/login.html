@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SatPLUS</title>
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  
+</head>
+
+<body>
+
+  <div class="login-page">
+  <div class="form">
+    <h1>SatPLUS</h1>
+    <form method="POST" class="register-form" action="php/registrar.php">
+      <select required="" name="t_usuario" id="t_usuario">
+        <option value="">Seleccione tipo de usuario</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="directivo u administrativo">Directivo u administrativo</option>
+        <option value="docente">Docente</option>
+      </select>
+      <select required="" name="t_documento">
+        <option value="">Seleccione tipo de documento</option>
+        <option value="cc">Cédula de ciudadanía</option>
+        <option value="ti">Tarjeta de identidad</option>
+        <option value="ce">Cédula de extranjería</option>
+        <option value="pp">Pasaporte</option>
+        <option value="dni">Documento nacional de identificación</option>
+        <option value="nit">Número de identificación tributaria</option>
+        <option value="PEP-RAMV">PEP-RAMV</option>
+      </select>
+      <input id="n_documento" name="n_documento" type="text" placeholder="Numero de documento" required="" />
+      <input name="nombres" type="text" placeholder="Nombres" required="" />
+      <input name="apellidos" type="text" placeholder="Apellidos" required="" />
+      <input name="contras" type="password" placeholder="Contraseña" required="" />
+      <input name="correo" type="email" placeholder="Correo electronico (opcional)"/>
+      <select required="" name="grado">
+        <option value="">Seleccione su grado</option>
+        <option value="6a">6A</option>
+        <option value="6b">6B</option>
+        <option value="6c">6C</option>
+        <option value="6d">6D</option>
+        <option value="7a">7A</option>
+        <option value="7b">7B</option>
+        <option value="7c">7C</option>
+        <option value="7d">7D</option>
+        <option value="7e">7E</option>
+        <option value="8a">8A</option>
+        <option value="8b">8B</option>
+        <option value="8c">8C</option>
+        <option value="8d">8D</option>
+        <option value="9a">9A</option>
+        <option value="9b">9B</option>
+        <option value="9c">9C</option>
+        <option value="9d">9D</option>
+        <option value="10a">10A</option>
+        <option value="10b">10B</option>
+        <option value="10c">10C</option>
+        <option value="10d">10D</option>
+        <option value="11a">11A</option>
+        <option value="11b">11B</option>
+        <option value="11c">11C</option>
+        <option value="11d">11D</option>
+      </select>
+      <input type="date" name="f_nac" required="">
+       <h3>Datos medicos</h3>
+       <select required="" name="t_sangre">
+        <option value="">Seleccione tipo de sangre</option>
+         <option value="o_positivo">O+</option>
+         <option value="o_negativo">O-</option>
+         <option value="a_positivo">A+</option>
+         <option value="a_negativo">A-</option>
+         <option value="b_positivo">B+</option>
+         <option value="b_negativo">B-</option>
+         <option value="ab_positivo">AB+</option>
+         <option value="ab_negativo">AB-</option>
+       </select>
+       <input type="text" name="alergias" placeholder="Alergias">
+       <input type="text" name="n_medicas" placeholder="Notas Medicas">
+      <button>create</button>
+      <p class="message">¿Ya estás registrado? <a href="#">Ingresa</a></p>
+    </form>
+
+    <form class="login-form" action="php/loguear.php" method="POST">
+    <select required="" name="t_documento">
+        <option value="">Seleccione tipo de documento</option>
+        <option value="cc">Cédula de ciudadanía</option>
+        <option value="ti">Tarjeta de identidad</option>
+        <option value="ce">Cédula de extranjería</option>
+        <option value="pp">Pasaporte</option>
+        <option value="dni">Documento nacional de identificación</option>
+        <option value="nit">Número de identificación tributaria</option>
+        <option value="PEP-RAMV">PEP-RAMV</option>
+      </select>
+      <input name="n_documento" type="text" placeholder="Numero de documento"/>
+      <input name="contras" type="password" placeholder="Contraseña"/>
+      <button>Login</button>
+      <p class="message">¿No estás registrado? <a href="#">Crear una cuenta</a></p>
+      <script  src="js/jquery.min.js"></script>
+
+    </form>
+  </div>
+</div>
+ 
+  
+
+    <script  src="js/h.js"></script>
+
+
+
+
+</body>
+
+</html>
